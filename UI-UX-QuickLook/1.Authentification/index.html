@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edeg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>MyApp</title>
+        <meta name="description" content="this is MyApp">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="signin-signup">
+                <form action="" class="sign-in-form">
+                    <h2 class="title"><span>Se</span> Connecter</h2>
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Adresse e-mail/numéro de tél.</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="password" required>
+                        <span></span>
+                        <label>Mot de pass</label>
+                    </div>
+                    <div class="pass">Mot de passe oublié ?</div>
+                    <input type="submit" value="Se Connecter" class="btn">
+                    <p class="account-text">Pas un membre? <a href="#" id="sign-up-btn2">S'inscrire</a></p>
+                </form>
+                <form action="" class="sign-up-form">
+                    <h2 class="title">S'inscrire</h2>
+                    <a href="../Sinscrire passager/index.html"><input type="button" value="Passager" class="btn"></a>
+                    <a href="../S'inscrire condicteur/index.html"><input type="button" value="Conducteur"
+                            class="btn"></a>
+                    <p class="account-text">vous ete un membre? <a href="#" id="sign-in-btn2">Se Connecter</a></p>
+                </form>
+            </div>
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Avez-vous un compte ?</h3>
+                        <p></p>
+                        <button class="btn" id="sign-in-btn">Se Connecter</button>
+                    </div>
+                    <img src="Image/image1.svg" alt="" class="image">
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>Vous n'avez pas un compte ?</h3>
+                        <p>Commencez avec un compte MYAPP gratuit,
+                            Pas de carte de crédit nécessaire!</p>
+                        <button class="btn" id="sign-up-btn">S'inscrire</button>
+                    </div>
+                    <img src="Image/image2.svg" alt="" class="image">
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+    </html>

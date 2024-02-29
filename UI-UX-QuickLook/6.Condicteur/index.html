@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edeg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Condicteur</title>
+        <meta name="description" content="this is MyApp">
+    </head>
+
+    <body>
+        <!--------------------------------------------header---------------------------------------------->
+        <header>
+            <div class="navbar">
+                <div class="navbar-container">
+                    <div class="logo-container">
+                        <a href="#home" class="logo"> <span>My</span> App</a>
+                    </div>
+                    <div class="menu-container">
+                        <ul class="menu-list">
+                            <li class="menu-list-item"><a href="#Proposer-un-trajet">Proposer un trajet</a></li>
+                            <li class="menu-list-item"><a href="#Mes-trajets">Les trajets</a></li>
+                            <li class="menu-list-item"><a href="#fr">Facture</a></li>
+                            <li class="menu-list-item"><a href="#Feedback">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="profile-container">
+                        <img class="profile-picture" src="image/icons8_account_50px.png" alt="">
+                        <div class="profile-text-container">
+                            <span class="profile-text"><a href="#prf">Profile</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--------------------------------------------home---------------------------------------------->
+        <section class="main" id="home">
+            <form class="ff">
+                <div class="content">
+                    <span class="Bienvenue">Salut...</span>
+                    <h3>Proposer <span class="ttt">un trajet</span></h3>
+                    <p>Sans voyager seul dans votre voiture à chaque fois, partagez votre trajet avec les passagers et gagnez la compagnie et de l'argent.</p>
+                    <button class="btn">Voir Plus</button>
+
+                </div>
+            </form>
+            <form class="ff">
+                <div class="image">
+                    <img src="image/undraw_adventure_re_ncqp.svg" alt="">
+                </div>
+            </form>
+        </section><!-- fin Main -->
+        <!--------------------------------------------proposer-trajet---------------------------------------------->
+        <section class="rechercher-trajet" id="Proposer-un-trajet">
+            <div class="title-white">
+                <h1>Proposer un trajet </h1>
+                <p>Remplissez soigneusement les infoemations</p>
+            </div>
+            <div class="con-proposer-trajet">
+                <div class="row">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-xs-4">
+                                <input type="text" id="from" placeholder="origin" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+    
+                            <div class="col-xs-4">
+                                <input type="text" id="to" placeholder="destination" class="form-control">
+                            </div>
+    
+                        </div>
+                        <div class="form-group">
+    
+                            <div class="col-xs-4">
+                                <input type="datetime-local" placeholder="Date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-4">
+                                <input type="text" placeholder="Prix en Dinar" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-4">
+                                <input type="text" placeholder="Nombre de place" class="form-control">
+                            </div>
+                        </div>
+                        <div class="Proposer">
+                            <button class="btn btn-info btn-lg">Proposer</button>
+                        </div>
+                    </form>
+                    <div class="map">
+                        <div id="googleMap">
+                        </div>
+                        <div id="output">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------------mes-trajet---------------------------------------------->
+        <section class="rechercher-trajet" id="Mes-trajets">
+            <div class="title-white">
+                <h1>Toutes vos trajets déja proppser</h1>
+                <p>Vous pouvez modifier/supprimer vos tarjets </p>
+            </div>
+            <div class="con-mes-trajet">
+                <table class="tbl-mes-trajet">
+                    <tr>
+                        <th>Date</th>
+                        <th>Départ</th>
+                        <th>Destination</th>
+                        <th>N.place</th>
+                        <th>Prix</th>
+                        <th>Les réservations</th>
+                        <th>Modifier</th>
+                        <th>Supprimer</th>
+                    </tr>
+                    <tr class="anima">
+                        <td>2020-03-04</td>
+                        <td>mila</td>
+                        <td>alger</td>
+                        <td>3</td>
+                        <td>700 DA</td>
+                        <td><button class="btn">Réservations</button></td>
+                        <td><a href="#"><img src="image/icons8_edit_30px.png"></a></td>
+                        <td><a href="#"><img src="image/icons8_delete_30px.png"></a></td>
+                    </tr>
+                    <tr class="anima">
+                        <td>2020-03-05</td>
+                        <td>alger</td>
+                        <td>mila</td>
+                        <td>3</td>
+                        <td>500 DA</td>
+                        <td><button class="btn">Réservations</button></td>
+                        <td><a href="#"><img src="image/icons8_edit_30px.png"></a></td>
+                        <td><a href="#"><img src="image/icons8_delete_30px.png"></a></td>
+                    </tr>
+                    <tr class="anima">
+                        <td>2020-03-09</td>
+                        <td>mila</td>
+                        <td>alger</td>
+                        <td>2</td>
+                        <td>800 DA</td>
+                        <td><button class="btn">Réservations</button></td>
+                        <td><a href="#"><img src="image/icons8_edit_30px.png"></a></td>
+                        <td><a href="#"><img src="image/icons8_delete_30px.png"></a></td>
+                    </tr>
+                   
+                </table>
+            </div>
+        </section>
+        <!--------------------------------------------facture---------------------------------------------->
+        <section class="rechercher-trajet" id="fr">
+            <div class="title-white">
+                <h1>La facture de cette mois </h1>
+                <p>Si vous ne payez pas les cotisations nécessaires avant la fin du mois, votre compte sera bloqué</p>
+            </div>
+            <div class="con-facture">
+                <div id="invoice" class="effect2">
+                    <div id="invoice-mid">
+                        <div class="clientlogo"></div>
+                        <div class="info">
+                            <h2>Anis Sellahi</h2>
+                            <p>anisellahi@gmail.com</p>
+                        </div>
+                        <div class="title">
+                            <h2>Facture #1069</h2>
+                            <p>
+                                Issue: May 27, 2022 <br>
+                                Date limite de paiement: June 27, 2022
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--End Invoice Mid-->
+                    <!--  TABLEAU FACTURE !-->
+                    <div id="invoice-bot">
+                        <div>
+                            <table class="table">
+                                <tr class="tabletitle">
+                                    <td class="item">
+                                        <h2>Num Trajet</h2>
+                                    </td>
+                                    <td class="Hours">
+                                        <h2>Plein bénéfice</h2>
+                                    </td>
+                                    <td class="Rate">
+                                        <h2>Intérét net</h2>
+                                    </td>
+                                    <td class="subtotal">
+                                        <h2>Le prix à payer</h2>
+                                    </td>
+                                </tr>
+
+                                <tr class="service">
+                                    <td class="tableitem">
+                                        <p class="itemtext">#753</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">5</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$75</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$375.00</p>
+                                    </td>
+                                </tr>
+
+                                <tr class="service">
+                                    <td class="tableitem">
+                                        <p class="itemtext">#216</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">3</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$75</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$225.00</p>
+                                    </td>
+                                </tr>
+
+                                <tr class="service">
+                                    <td class="tableitem">
+                                        <p class="itemtext">#162</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">5</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$75</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$375.00</p>
+                                    </td>
+                                </tr>
+
+                                <tr class="service">
+                                    <td class="tableitem">
+                                        <p class="itemtext">#981</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">20</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$75</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$1,500.00</p>
+                                    </td>
+                                </tr>
+
+                                <tr class="service">
+                                    <td class="tableitem">
+                                        <p class="itemtext">#862</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">10</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$75</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$750.00</p>
+                                    </td>
+                                </tr>
+
+                                <tr class="service">
+                                    <td class="tableitem">
+                                        <p class="itemtext"></p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">HST</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">13%</p>
+                                    </td>
+                                    <td class="tableitem">
+                                        <p class="itemtext">$419.25</p>
+                                    </td>
+                                </tr>
+
+                                <tr class="tabletitle">
+                                    <td></td>
+                                    <td></td>
+                                    <td class="Rate">
+                                        <h2>Total</h2>
+                                    </td>
+                                    <td class="payment">
+                                        <h2>$3,644.25</h2>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <!--End Table-->
+                        <!--- BOTTOM FACTURE !-->
+                        <div class="ft">
+                            <form>
+                                <footer>
+                                    <button class="btn-payer">Payer</button>
+                                </footer>
+                            </form>
+                        </div>
+                        <div id="legalcopy">
+                            <p class="legal"><strong>Merci pour votre service!</strong> Le paiement est attendu dans les
+                                31 jours; veuillez traiter cette facture dans ce délai. Il y aura un intérêt de 5% par
+                                mois sur les factures en retard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------------feedback---------------------------------------------->
+        <section class="rechercher-trajet" id="Feedback">
+            <div class="title-white">
+                <h1>Passer un feedback sur l'application</h1>
+                <p>Vous nous aiderez à fournir un bon service</p>
+            </div>
+            <div class="con-feedback">
+                <textarea class="txt-feedback" name="story" rows="5" cols="48" placeholder="écrit.."></textarea>
+            </div>
+            <button class="btnfeedback">Envoyer</button>
+        </section>
+        <!--------------------------------------------fine---------------------------------------------->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo4gwt-rYGoExd4s8X27N9Kzybbc2W5ac&libraries=places">
+            </script>
+        <script src="app.js"></script>
+    </body>
+</hmtl>

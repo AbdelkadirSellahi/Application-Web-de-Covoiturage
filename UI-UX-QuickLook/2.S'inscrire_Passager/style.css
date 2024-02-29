@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.center {
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.con-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+h1 {
+    font-size: 2.3em;
+    text-align: center;
+    padding: 30px 5px 50px 5px;
+}
+h1 span{
+    color: #e38528;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    min-width: 238px;
+    padding: 10px;
+}
+
+.container {
+    margin: 15px;
+}
+.con-lbl{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+form .txt_field {
+    position: relative;
+    justify-content: space-around;
+    margin: 5px 13px;
+    padding: 5px 6px 5px 6px;
+}
+
+form .txt_field2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;
+}
+
+.txt_field input,
+.txt_field2 input {
+    border: none;
+    outline: none;
+    padding: 0px 0px;
+    border-bottom: 1px solid #aaafb3;
+    height: 40px;
+    background: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn {
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    background: #e38528;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    transition: all .4s;
+}
+
+.btn:hover {
+    background: #111;
+    letter-spacing: .1rem;
+}
+
+.Image {
+    background: #222;
+}
+
+p{
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 5px;
+}

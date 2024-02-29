@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* --------------------------------------------section---------------------------------------------- */
+section {
+  padding: 44px 152px;
+}
+
+/* --------------------------------------------titre white---------------------------------------------- */
+.title h1 {
+  
+  font-size: 3em;
+}
+
+.title p {
+  padding: 20px;
+}
+
+.title h1,
+.title p {
+  color: #111;
+  text-align: center;
+}
+
+/*--------------------------------------------profile----------------------------------------------*/
+.container {
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  background: linear-gradient(-45deg, #fcf2e8, #fff);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.center {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.con-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 5;
+}
+
+.center h2 {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 2px;
+  border-bottom: 1px solid #111;
+}
+
+form .txt_field {
+  position: relative;
+  margin: 38px 0;
+}
+.txt_field a {
+  color: #e38528;
+  text-decoration: none;
+}
+.txt_field a{
+  color: #e38528;
+  text-decoration: none;
+}
+
+.org {
+  font-size: large;
+}
+
+.newlbl {
+  font-size: large;
+  color: #7b7b81;
+}

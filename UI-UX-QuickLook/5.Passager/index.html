@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edeg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Passager</title>
+        <meta name="description" content="this is MyApp">
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="navbar-container">
+                    <div class="logo-container">
+                        <a href="#home" class="logo"> <span>My</span> App</a>
+                    </div>
+                    <div class="menu-container">
+                        <ul class="menu-list">
+                            <li class="menu-list-item active"><a href="#trajet">Recharcher un trajet</a></li>
+                            <li class="menu-list-item"><a href="#Ma-réservation">Ma réservation</a></li>
+                            <li class="menu-list-item"><a href="#Feedback">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="profile-container">
+                        <img class="profile-picture" src="image/icons8_account_50px.png" alt="">
+                        <div class="profile-text-container">
+                            <span class="profile-text"><a href="#Mon-Profile">Profile</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--------------------------------------------home---------------------------------------------->
+        <section class="main" id="home">
+            <form class="ff">
+                <div class="content">
+                    <span class="Bienvenue">Salut...</span>
+                    <h3>Trouvez <span class="ttt">un trajet</span></h3>
+                    <p>trouvez le trajet parfait parmi notre large éventail de destinations et d'itinéraires à bas
+                        prix.</p>
+                    <button class="btn">Voir Plus</button>
+
+                </div>
+            </form>
+            <form class="ff">
+                <div class="image">
+                    <img src="image/undraw_map_re_60yf.svg" alt="">
+                </div>
+            </form>
+        </section><!-- fin Main -->
+
+        <section class="rechercher-trajet" id="trajet">
+            <div class="jumbotron">
+                <div class="container-fluid">
+                    <div class="title-white">
+                        <h1>Rechercher un trajet entre deux endroits</h1>
+                        <p>Cette application vous aidera à trouver le moins cher trajet de déplacement </p>
+                    </div>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col">
+                                <input type="text" id="from" placeholder="origin" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col">
+                                <input type="text" id="to" placeholder="destination" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col">
+                                <input type="text" placeholder="Date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xs-offset-2 col-xs-10">
+                            <button class="btn btn-info btn-lg">Recharcher</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <form action="">
+                    <table class="tbl-reseravtion">
+                        <tr>
+                            <th>Condicteur</th>
+                            <th>Prix</th>
+                            <th>Nombre de place</th>
+                            <th>Réserver</th>
+                        </tr>
+                        <tr class="anima">
+                            <td>Sellahi</td>
+                            <td>100 DA</td>
+                            <td>4</td>
+                            <td><a href="#"><img class="imag" src="image/icons8_checkmark_30px.png"></a></td>
+                        </tr>
+                        <tr class="anima">
+                            <td>benzahra</td>
+                            <td>150 DA</td>
+                            <td>1</td>
+                            <td><a href="#"><img class="imag" src="image/icons8_checkmark_30px.png"></a></td>
+                        </tr>
+                        <tr class="anima">
+                            <td>boussof</td>
+                            <td>100</td>
+                            <td>2</td>
+                            <td><a href="#"><img class="imag" src="image/icons8_checkmark_30px.png"></a></td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="map">
+                    <div id="googleMap">
+                    </div>
+                    <div id="output">
+                    </div>
+                </div>
+            </div>
+        </section><!-- fin rechercher-un-trajet -->
+
+        <section class="rechercher-trajet" id="Ma-réservation">
+            <div class="title-white">
+                <h1>Toutes vos Réservatios</h1>
+                <p>Vous pouvez annuler vos réservations ou modifier (nombre de places)</p>
+            </div>
+            <div class="con-table">
+                <table class="tbl-reseravtion">
+                    <tr>
+                        <th>Condicteur</th>
+                        <th>Date</th>
+                        <th>Départ</th>
+                        <th>Destination</th>
+                        <th>Nombre de place</th>
+                        <th>Modifier</th>
+                        <th>Annuler</th>
+                    </tr>
+                    <tr class="anima">
+                        <td>sellahi</td>
+                        <td>2020-05-05</td>
+                        <td>mila</td>
+                        <td>alger</td>
+                        <td>2</td>
+                        <td><a href="#"><img src="image/icons8_edit_30px.png"></a></td>
+                        <td><a href="#"><img src="image/icons8_delete_30px.png"></a></td>
+                    </tr>
+                    <tr class="anima">
+                        <td>benzahra</td>
+                        <td>202-04-04</td>
+                        <td>jijel</td>
+                        <td>anaba</td>
+                        <td>4</td>
+                        <td><a href="#"><img src="image/icons8_edit_30px.png"></a></td>
+                        <td><a href="#"><img src="image/icons8_delete_30px.png"></a></td>
+                    </tr>
+                    <tr class="anima">
+                        <td>boussof</td>
+                        <td>2020-07-12</td>
+                        <td>alger</td>
+                        <td>mila</td>
+                        <td>1</td>
+                        <td><a href="#"><img src="image/icons8_edit_30px.png"></a></td>
+                        <td><a href="#"><img src="image/icons8_delete_30px.png"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </section><!-- fin ma-reservation -->
+
+        <section class="rechercher-trajet" id="Feedback">
+            <div class="title-white">
+                <h1>Passer un feedback sur l'application</h1>
+                <p>Vous nous aiderez à fournir un bon service</p>
+            </div>
+            <div class="con-feedback">
+                <textarea class="txt-feedback" name="story" rows="5" cols="48" placeholder="écrit.."></textarea>
+            </div>
+            <button class="btnfeedback">Envoyer</button>
+        </section><!-- fin feedback -->
+        <!-- footer section  -->
+        <footer class="footer"> created by <span> mr. S.Abdelkadir </span> | all rights reserved! </footer>
+        <!-- custom js file link  -->
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo4gwt-rYGoExd4s8X27N9Kzybbc2W5ac&libraries=places">
+            </script>
+        <script src="app.js">
+        </script>
+    </body>
+</hmtl>
